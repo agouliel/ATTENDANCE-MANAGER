@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsFormsApplication1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ReportFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\testreport</Value>
+    </Setting>
+    <Setting Name="AttendanceConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">k/WeWpYKPGrYP7sUBqCReRvasRCvhIGvZJOdRj+aZmBB2+WxnC8bO77pyvDKCEEQQKzpH7Y0wDfVB056hH32lQ6T9+DJqwXtKPWsN8Abz8WJw6kVLdSYalSo9FqgEn1El76Rwa9lWCs1p2P949VWrv14gvo9WtE2imMz5nK/GQk=</Value>
+    </Setting>
+    <Setting Name="CnStr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.0.17,1433|AttendanceUser|jplefgsahuutsqwcmnhajreliqpsaltddweoiplnalsxz</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

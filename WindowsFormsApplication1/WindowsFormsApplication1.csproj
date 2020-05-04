@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CD2825A-6F61-48ED-8D40-7F4CCE240A5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Portable.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=4.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExtraLibraries\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Interop.xlsgen">
+      <HintPath>..\ArstDesign\Interop.xlsgen.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Nevron.Chart, Version=9.1.5.12, Culture=neutral, PublicKeyToken=2961c51bb98125d2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExtraLibraries\Nevron.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Chart.WinForm, Version=9.1.5.12, Culture=neutral, PublicKeyToken=c9bd8998e981e4ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExtraLibraries\Nevron.Chart.WinForm.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Presentation, Version=9.1.5.12, Culture=neutral, PublicKeyToken=6656c5d1103e75cc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExtraLibraries\Nevron.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.System, Version=9.1.5.12, Culture=neutral, PublicKeyToken=6a987feae5e496fd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExtraLibraries\Nevron.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management.Instrumentation">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.cs">
+      <DependentUpon>Attendance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attendance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BriefCaseAttendace.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BriefCaseAttendace.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_ReportCritical.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ReportCritical.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAttendance.Designer.cs">
+      <DependentUpon>FormAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBriefcase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBriefcase.Designer.cs">
+      <DependentUpon>FormBriefcase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBriefcaseFileNameInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBriefcaseFileNameInfo.Designer.cs">
+      <DependentUpon>FormBriefcaseFileNameInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBriefcaseVessels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBriefcaseVessels.Designer.cs">
+      <DependentUpon>FormBriefcaseVessels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBriefcaseVLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBriefcaseVLog.Designer.cs">
+      <DependentUpon>FormBriefcaseVLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExcelPump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExcelPump.Designer.cs">
+      <DependentUpon>FormExcelPump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExcelPumpPlus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExcelPumpPlus.Designer.cs">
+      <DependentUpon>FormExcelPumpPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportQuestionnaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportQuestionnaire.Designer.cs">
+      <DependentUpon>FormImportQuestionnaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInspectionType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInspectionType.Designer.cs">
+      <DependentUpon>FormInspectionType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogon.Designer.cs">
+      <DependentUpon>FormLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormObjectContext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormObjectContext.Designer.cs">
+      <DependentUpon>FormObjectContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuestionnaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuestionnaire.Designer.cs">
+      <DependentUpon>FormQuestionnaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuestionnaireOrigin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuestionnaireOrigin.Designer.cs">
+      <DependentUpon>FormQuestionnaireOrigin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegisterQuestionnaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegisterQuestionnaire.Designer.cs">
+      <DependentUpon>FormRegisterQuestionnaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransferQuestionnaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransferQuestionnaires.Designer.cs">
+      <DependentUpon>FormTransferQuestionnaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVesselRegistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVesselRegistry.Designer.cs">
+      <DependentUpon>FormVesselRegistry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVettingComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVettingComments.designer.cs">
+      <DependentUpon>FormVettingComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVettingGeneralInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVettingGeneralInfo.Designer.cs">
+      <DependentUpon>FormVettingGeneralInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVettingRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVettingRequest.Designer.cs">
+      <DependentUpon>FormVettingRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CategoryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CategoryEditor.Designer.cs">
+      <DependentUpon>Form_CategoryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuestionnaireInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuestionnaireInfo.Designer.cs">
+      <DependentUpon>Form_QuestionnaireInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ReportCritical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ReportCritical.Designer.cs">
+      <DependentUpon>Form_ReportCritical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_WelcomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_WelcomeScreen.Designer.cs">
+      <DependentUpon>Form_WelcomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAttendance.resx">
+      <DependentUpon>FormAttendance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBriefcase.resx">
+      <DependentUpon>FormBriefcase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBriefcaseFileNameInfo.resx">
+      <DependentUpon>FormBriefcaseFileNameInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBriefcaseVessels.resx">
+      <DependentUpon>FormBriefcaseVessels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBriefcaseVLog.resx">
+      <DependentUpon>FormBriefcaseVLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExcelPump.resx">
+      <DependentUpon>FormExcelPump.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExcelPumpPlus.resx">
+      <DependentUpon>FormExcelPumpPlus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportQuestionnaire.resx">
+      <DependentUpon>FormImportQuestionnaire.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInspectionType.resx">
+      <DependentUpon>FormInspectionType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogon.resx">
+      <DependentUpon>FormLogon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormObjectContext.resx">
+      <DependentUpon>FormObjectContext.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuestionnaire.resx">
+      <DependentUpon>FormQuestionnaire.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuestionnaireOrigin.resx">
+      <DependentUpon>FormQuestionnaireOrigin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegisterQuestionnaire.resx">
+      <DependentUpon>FormRegisterQuestionnaire.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransferQuestionnaires.resx">
+      <DependentUpon>FormTransferQuestionnaires.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVesselRegistry.resx">
+      <DependentUpon>FormVesselRegistry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVettingComments.resx">
+      <DependentUpon>FormVettingComments.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVettingGeneralInfo.resx">
+      <DependentUpon>FormVettingGeneralInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVettingRequest.resx">
+      <DependentUpon>FormVettingRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CategoryEditor.resx">
+      <DependentUpon>Form_CategoryEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuestionnaireInfo.resx">
+      <DependentUpon>Form_QuestionnaireInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ReportCritical.resx">
+      <DependentUpon>Form_ReportCritical.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_WelcomeScreen.resx">
+      <DependentUpon>Form_WelcomeScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Attendance.xsc">
+      <DependentUpon>Attendance.xsd</DependentUpon>
+    </None>
+    <None Include="Attendance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Attendance.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Attendance.xss">
+      <DependentUpon>Attendance.xsd</DependentUpon>
+    </None>
+    <None Include="BriefCaseAttendace.xsc">
+      <DependentUpon>BriefCaseAttendace.xsd</DependentUpon>
+    </None>
+    <None Include="BriefCaseAttendace.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BriefCaseAttendace.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BriefCaseAttendace.xss">
+      <DependentUpon>BriefCaseAttendace.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ReportCritical.xsc">
+      <DependentUpon>DataSet_ReportCritical.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ReportCritical.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ReportCritical.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_ReportCritical.xss">
+      <DependentUpon>DataSet_ReportCritical.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DemExcelFile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DemExcelFile1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DemExcelFile11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Portable.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vetting\Vetting.csproj">
+      <Project>{8EE2FA41-DB20-4EA0-B783-FB0FF96FCA03}</Project>
+      <Name>Vetting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

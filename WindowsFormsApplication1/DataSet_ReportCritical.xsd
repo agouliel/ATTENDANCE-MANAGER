@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_ReportCritical" targetNamespace="http://tempuri.org/DataSet_ReportCritical.xsd" xmlns:mstns="http://tempuri.org/DataSet_ReportCritical.xsd" xmlns="http://tempuri.org/DataSet_ReportCritical.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NegativeQuestions" msprop:Generator_UserTableName="NegativeQuestions" msprop:Generator_RowDeletedName="NegativeQuestionsRowDeleted" msprop:Generator_RowChangedName="NegativeQuestionsRowChanged" msprop:Generator_RowClassName="NegativeQuestionsRow" msprop:Generator_RowChangingName="NegativeQuestionsRowChanging" msprop:Generator_RowEvArgName="NegativeQuestionsRowChangeEvent" msprop:Generator_RowEvHandlerName="NegativeQuestionsRowChangeEventHandler" msprop:Generator_TableClassName="NegativeQuestionsDataTable" msprop:Generator_TableVarName="tableNegativeQuestions" msprop:Generator_RowDeletingName="NegativeQuestionsRowDeleting" msprop:Generator_TablePropName="NegativeQuestions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ObjectId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ObjectId" msprop:Generator_ColumnVarNameInTable="columnObjectId" msprop:Generator_ColumnPropNameInRow="ObjectId" msprop:Generator_ColumnPropNameInTable="ObjectIdColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="ObjectDescription" msprop:Generator_UserColumnName="ObjectDescription" msprop:Generator_ColumnVarNameInTable="columnObjectDescription" msprop:Generator_ColumnPropNameInRow="ObjectDescription" msprop:Generator_ColumnPropNameInTable="ObjectDescriptionColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="ObjectComments" msprop:Generator_UserColumnName="ObjectComments" msprop:Generator_ColumnVarNameInTable="columnObjectComments" msprop:Generator_ColumnPropNameInRow="ObjectComments" msprop:Generator_ColumnPropNameInTable="ObjectCommentsColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="VesselName" msprop:Generator_UserColumnName="VesselName" msprop:Generator_ColumnVarNameInTable="columnVesselName" msprop:Generator_ColumnPropNameInRow="VesselName" msprop:Generator_ColumnPropNameInTable="VesselNameColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="QuestionCode" msprop:Generator_UserColumnName="QuestionCode" msprop:Generator_ColumnVarNameInTable="columnQuestionCode" msprop:Generator_ColumnPropNameInRow="QuestionCode" msprop:Generator_ColumnPropNameInTable="QuestionCodeColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="CategoryNewId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="CategoryNewId" msprop:Generator_ColumnVarNameInTable="columnCategoryNewId" msprop:Generator_ColumnPropNameInRow="CategoryNewId" msprop:Generator_ColumnPropNameInTable="CategoryNewIdColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="VesselId" msprop:Generator_UserColumnName="VesselId" msprop:Generator_ColumnVarNameInTable="columnVesselId" msprop:Generator_ColumnPropNameInRow="VesselId" msprop:Generator_ColumnPropNameInTable="VesselIdColumn" type="xs:int" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataSet_ReportCritical" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet_ReportCritical" msprop:Generator_DataSetName="DataSet_ReportCritical" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="NegativeQuestions" />
+        <xs:element name="Vetting" msprop:Generator_UserTableName="Vetting" msprop:Generator_RowDeletedName="VettingRowDeleted" msprop:Generator_RowChangedName="VettingRowChanged" msprop:Generator_RowClassName="VettingRow" msprop:Generator_RowChangingName="VettingRowChanging" msprop:Generator_RowEvArgName="VettingRowChangeEvent" msprop:Generator_RowEvHandlerName="VettingRowChangeEventHandler" msprop:Generator_TableClassName="VettingDataTable" msprop:Generator_TableVarName="tableVetting" msprop:Generator_RowDeletingName="VettingRowDeleting" msprop:Generator_TablePropName="Vetting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VesselName" msprop:Generator_UserColumnName="VesselName" msprop:Generator_ColumnVarNameInTable="columnVesselName" msprop:Generator_ColumnPropNameInRow="VesselName" msprop:Generator_ColumnPropNameInTable="VesselNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VettingCode" msprop:Generator_UserColumnName="VettingCode" msprop:Generator_ColumnVarNameInTable="columnVettingCode" msprop:Generator_ColumnPropNameInRow="VettingCode" msprop:Generator_ColumnPropNameInTable="VettingCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VetDate" msprop:Generator_UserColumnName="VetDate" msprop:Generator_ColumnVarNameInTable="columnVetDate" msprop:Generator_ColumnPropNameInRow="VetDate" msprop:Generator_ColumnPropNameInTable="VetDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Significance" msprop:Generator_UserColumnName="Significance" msprop:Generator_ColumnVarNameInTable="columnSignificance" msprop:Generator_ColumnPropNameInRow="Significance" msprop:Generator_ColumnPropNameInTable="SignificanceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GlobalDisplayIndex" msprop:Generator_UserColumnName="GlobalDisplayIndex" msprop:Generator_ColumnVarNameInTable="columnGlobalDisplayIndex" msprop:Generator_ColumnPropNameInRow="GlobalDisplayIndex" msprop:Generator_ColumnPropNameInTable="GlobalDisplayIndexColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ObjectId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ObjectId" msprop:Generator_ColumnVarNameInTable="columnObjectId" msprop:Generator_ColumnPropNameInRow="ObjectId" msprop:Generator_ColumnPropNameInTable="ObjectIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InspectorName" msprop:Generator_UserColumnName="InspectorName" msprop:Generator_ColumnPropNameInRow="InspectorName" msprop:Generator_ColumnVarNameInTable="columnInspectorName" msprop:Generator_ColumnPropNameInTable="InspectorNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyRepresentativeName" msprop:Generator_UserColumnName="CompanyRepresentativeName" msprop:Generator_ColumnVarNameInTable="columnCompanyRepresentativeName" msprop:Generator_ColumnPropNameInRow="CompanyRepresentativeName" msprop:Generator_ColumnPropNameInTable="CompanyRepresentativeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MajorName" msprop:Generator_UserColumnName="MajorName" msprop:Generator_ColumnPropNameInRow="MajorName" msprop:Generator_ColumnVarNameInTable="columnMajorName" msprop:Generator_ColumnPropNameInTable="MajorNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VesselId" msprop:Generator_UserColumnName="VesselId" msprop:Generator_ColumnPropNameInRow="VesselId" msprop:Generator_ColumnVarNameInTable="columnVesselId" msprop:Generator_ColumnPropNameInTable="VesselIdColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Vessels" msprop:Generator_UserTableName="Vessels" msprop:Generator_RowDeletedName="VesselsRowDeleted" msprop:Generator_RowChangedName="VesselsRowChanged" msprop:Generator_RowClassName="VesselsRow" msprop:Generator_RowChangingName="VesselsRowChanging" msprop:Generator_RowEvArgName="VesselsRowChangeEvent" msprop:Generator_RowEvHandlerName="VesselsRowChangeEventHandler" msprop:Generator_TableClassName="VesselsDataTable" msprop:Generator_TableVarName="tableVessels" msprop:Generator_RowDeletingName="VesselsRowDeleting" msprop:Generator_TablePropName="Vessels">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VesselName" msprop:Generator_UserColumnName="VesselName" msprop:Generator_ColumnVarNameInTable="columnVesselName" msprop:Generator_ColumnPropNameInRow="VesselName" msprop:Generator_ColumnPropNameInTable="VesselNameColumn" type="xs:string" />
+              <xs:element name="vesselId" msprop:Generator_UserColumnName="vesselId" msprop:Generator_ColumnVarNameInTable="columnvesselId" msprop:Generator_ColumnPropNameInRow="vesselId" msprop:Generator_ColumnPropNameInTable="vesselIdColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="VesselsKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Vessels" />
+      <xs:field xpath="mstns:VesselName" />
+    </xs:unique>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Vessels" />
+      <xs:field xpath="mstns:vesselId" />
+    </xs:unique>
+    <xs:keyref name="Vessels_NegativeQuestions" refer="Constraint1" msprop:rel_Generator_UserRelationName="Vessels_NegativeQuestions" msprop:rel_Generator_RelationVarName="relationVessels_NegativeQuestions" msprop:rel_Generator_UserChildTable="NegativeQuestions" msprop:rel_Generator_UserParentTable="Vessels" msprop:rel_Generator_ParentPropName="VesselsRow" msprop:rel_Generator_ChildPropName="GetNegativeQuestionsRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:NegativeQuestions" />
+      <xs:field xpath="mstns:VesselId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
