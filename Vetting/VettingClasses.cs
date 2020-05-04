@@ -1455,18 +1455,14 @@ namespace Vetting
                 "[VettingCode] [Nvarchar](64) NULL," +
                 "[VetGUI] [uniqueidentifier] NULL," +
                 "[InspectionTypeId] [int] NULL" +
-
                 ")";
 
-                cmd.ExecuteNonQuery(); // create table VettingInfo - AttendancePortable will insert into this table
+                cmd.ExecuteNonQuery(); // create table VettingInfo - AttendancePortable will insert into this table (a.goulielmos 2014)
 
-
-                cmd.CommandText =
-                    "ALTER TABLE [VettingInfo] ADD CONSTRAINT VettingInfo_FK FOREIGN KEY ([Qid]) REFERENCES VIQINFO (QID)";
+                cmd.CommandText = "ALTER TABLE [VettingInfo] ADD CONSTRAINT VettingInfo_FK FOREIGN KEY ([Qid]) REFERENCES VIQINFO (QID)";
                 cmd.ExecuteNonQuery();
 
-                cmd.CommandText =
-               "ALTER TABLE [SMVetting] ADD CONSTRAINT Vetting_VettingInfo_FK FOREIGN KEY ([Vetid]) REFERENCES VETTINGINFO (VETID) ON DELETE CASCADE";
+                cmd.CommandText = "ALTER TABLE [SMVetting] ADD CONSTRAINT Vetting_VettingInfo_FK FOREIGN KEY ([Vetid]) REFERENCES VETTINGINFO (VETID) ON DELETE CASCADE";
                 cmd.ExecuteNonQuery();
 
 
